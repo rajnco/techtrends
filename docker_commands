@@ -1,0 +1,32 @@
+## Docker commands used to build the application 
+# TODO: insert the docker build command
+docker build -t techtrends . 
+
+## Docker commands used to run the application
+# TODO: insert the docker run command
+docker run -p 3111:3111  techtrends
+docker run -p 3111:3111 -d  techtrends
+
+## Docker commands used to get the application logs
+# TODO: insert the docker logs command
+# docker logs <container-id>
+docker logs   689a1d81c4275f6323d23b95d86e1280175948245d4ebffa04a67e18165fa256
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container 
+
+ docker logs   689a1d81c4275f6323d23b95d86e1280175948245d4ebffa04a67e18165fa256 
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:172.17.0.1 - - [27/Aug/2021 06:48:41] "GET / HTTP/1.1" 200 -
+INFO:app:27/08/2021, 06:48:47, Article "2020 CNCF Annual Report" retrieved! 
+INFO:werkzeug:172.17.0.1 - - [27/Aug/2021 06:48:47] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [27/Aug/2021 06:50:12] "GET / HTTP/1.1" 200 -
+INFO:app:27/08/2021, 06:50:16, Article "Kubernetes Certification" retrieved! 
+INFO:werkzeug:172.17.0.1 - - [27/Aug/2021 06:50:16] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [27/Aug/2021 06:50:19] "GET / HTTP/1.1" 200 -
+
